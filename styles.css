@@ -7,6 +7,11 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    --smem: 1.4em;
+}
+
+  * {
+    box-sizing: border-box;
   }
   body {
     margin: 0;
@@ -53,6 +58,7 @@
     color: var(--hospital-green);
   }
   .navbar-email {
+    cursor: pointer;
     color: var(--very-light-pink);
     font-size: var(--sm);
     margin-right: 12px;
@@ -74,6 +80,134 @@
     justify-content: center;
     align-items: center;
   }
+  /* css de clase 7 (menu de usuario) */
+  .inactive{
+    display: none;
+  }
+
+  .desktop-menu {
+    /* font-size: 62.5%; */
+    position: absolute;
+    top: 3.7em;
+    right: 3.5em;
+    background-color: var(--white);
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+  }
+  .desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu ul li {
+    text-align: end;
+  }
+  .desktop-menu ul li:nth-child(1),
+  .desktop-menu ul li:nth-child(2) {
+    font-weight: bold;
+  }
+  .desktop-menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+  }
+  .desktop-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+  }
+  .desktop-menu ul li a {
+    color: var(--back);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  /* CSS para clase 8 */
+  .mobile-menu {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    padding: 24px;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+  }
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+  }
+  .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+  }
+  /* Footer web section */
+  .social-red{
+    position: relative;
+    display: flex;
+    font-family: "FontAwesome";
+  }
+  .social-red li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .social-red li a{
+    text-decoration: none;
+  }
+  .social-red li a .fa-brands {
+    font-size: 6em;
+    color: #222
+  }
+  .social-red li::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  .social-red li:nth-child(1)::before {
+    content: "\f16d";
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%,
+    #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #dc2743;
+  }
+  .social-red li:nth-child(2)::before {
+    content: "\f232";
+    color: #25D366;
+    border-bottom: 4px solid #25D366;
+  }
+  .social-red li:nth-child(3)::before {
+    content: "\f099";
+    color: #1DA1F2;
+    border-bottom: 4px solid #1DA1F2;
+  }
+  .social-red li:hover::before {
+    height: 100%;
+  }
+
   @media (max-width: 640px) {
     .menu {
       display: block;
