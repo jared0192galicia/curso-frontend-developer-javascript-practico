@@ -126,6 +126,7 @@
 
   /* CSS para clase 8 */
   .mobile-menu {
+    display: none;
     position: absolute;
     top: 20px;
     left: 0px;
@@ -157,10 +158,22 @@
     color: var(--hospital-green) !important;
   }
   /* Footer web section */
+  footer {
+    position: absolute;
+    top: 83%;
+    background-color: var(--black);
+    width: 100%;
+    min-height: 17%;
+  }
   .social-red{
-    position: relative;
+    position: absolute;
+    top: 22%;
+    left: 33.5%;
     display: flex;
     font-family: "FontAwesome";
+  }
+  .item-social {
+    max-width: 30%;
   }
   .social-red li {
     position: relative;
@@ -171,16 +184,18 @@
   .social-red li a{
     text-decoration: none;
   }
+  /* control sobre la silueta negra */
   .social-red li a .fa-brands {
-    font-size: 6em;
+    font-size: 3em;
     color: #222
   }
+  /* control sobre la silueta de color */
   .social-red li::before {
     font-family: "FontAwesome";
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 6em;
+    font-size: 3em;
     height: 0;
     overflow: hidden;
     transition: 0.5s ease-in-out;
@@ -217,5 +232,19 @@
     }
     .navbar-email {
       display: none;
+    }
+    .inactive{
+      display: none;
+    }
+    .social-red {
+      left: 10%;
+    }
+      /* control sobre la silueta negra */
+    .social-red li a .fa-brands {
+      font-size: 2em;
+    }
+    /* control sobre la silueta de color */
+    .social-red li::before {
+      font-size: 2em;
     }
   }
