@@ -168,8 +168,9 @@
   .social-red{
     position: absolute;
     top: 22%;
-    left: 33.5%;
+    left: 50%;
     display: flex;
+    margin: 10px -150px;
     font-family: "FontAwesome";
   }
   .item-social {
@@ -183,6 +184,7 @@
   }
   .social-red li a{
     text-decoration: none;
+    text-align: center;
   }
   /* control sobre la silueta negra */
   .social-red li a .fa-brands {
@@ -237,14 +239,14 @@
       display: none;
     }
     .social-red {
-      left: 10%;
+      margin: 10px -140px;
     }
       /* control sobre la silueta negra */
     .social-red li a .fa-brands {
-      font-size: 2em;
+      font-size: 2.4em;
     }
     /* control sobre la silueta de color */
     .social-red li::before {
-      font-size: 2em;
+      font-size: 2.4em;
     }
   }
