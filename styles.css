@@ -126,7 +126,7 @@
 
   /* CSS para clase 8 */
   .mobile-menu {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 20px;
     left: 0px;
@@ -236,7 +236,7 @@
       display: none;
     }
     .inactive{
-      display: none;
+      /* display: none; */
     }
     .social-red {
       margin: 10px -140px;
